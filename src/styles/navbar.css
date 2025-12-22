@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  color: white;
+}
+
+.navLogo h1 {
+  margin: 0;
+}
+
+.navLink {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navLink-item {
+  cursor: pointer;
+}
+h1>a {
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+h1>a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 16px yellow;
+    transform: scale(1.2);
+}
+.navLink-item a {
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in;
+}
+.navLink-item a:hover {
+    color: rgb(92, 92, 92);
+    transform: scale(2);
+    background: rgba(20, 20, 20, 0.8);
+    box-shadow: yellow 0px 0px 10px;
+}

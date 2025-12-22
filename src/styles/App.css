@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column; /* ← Important : colonne, pas centré */
+}
+
+header {
+  /* La navbar reste en haut */
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  text-align: left; /* ← Alignement à gauche */
+}
