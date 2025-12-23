@@ -9,14 +9,12 @@ body {
 }
 
 .App {
+  position: relative;
+  z-index: 1; /* Pour être au-dessus de la carte */
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column; /* ← Important : colonne, pas centré */
-}
-
-header {
-  /* La navbar reste en haut */
 }
 
 main {

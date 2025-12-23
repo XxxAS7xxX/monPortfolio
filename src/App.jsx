@@ -6,6 +6,7 @@ import Projets from './projets.jsx'
 import Stages from './stages.jsx'
 import Competences from './competences.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import WorldMapBackground from './worldMapBackground.jsx'
 
 function App() {
   
