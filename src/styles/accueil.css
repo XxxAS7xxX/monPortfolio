@@ -1,16 +1,28 @@
 .accueil{
-    background: rgb(100, 100, 100);
-    padding: none;
-    min-width: 100vw;
     min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.75);
 }
-.haut{
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.haut{  
+    position: relative;
+    z-index: 1;
+    text-align: center;
     padding-top: 2em;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background: rgb(44, 44, 44);
-    min-width: 100vw;
+    align-items: center;
     min-height: 80vh;
     color: white;
 }
