@@ -15,9 +15,10 @@ const Accueil = () => (
         <div className="haut">
             <h1>Bienvenue sur mon portfolio</h1>
             <br />
-            <h2>Bonjour, je suis Axel DELPIERRE</h2>
             <br />
-            <h3 style={{ width: '40%', textAlign: 'center'}}>Étudiant en 2ème année de BTS SIO au lycée Jean Vilar, spécialisé en SLAM (Solutions Logicielles et Applications Métiers)</h3>
+            <h2 style={{textShadow:'0 0 10px yellow'}}>Bonjour, je suis Axel DELPIERRE</h2>
+            <br />
+            <h3 style={{ width: '40%', textAlign: 'center', textShadow: '0 0 10px yellow'}}>Étudiant en 2ème année de BTS SIO au lycée Jean Vilar, spécialisé en SLAM (Solutions Logicielles et Applications Métiers)</h3>
             <ul className="box-accueil">
                 <div className="box-projets box">
                     <h1>Projets</h1>
