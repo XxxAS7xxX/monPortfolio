@@ -1,7 +1,9 @@
 import './styles/projets.css';
 import bgVideo from './assets/videoProjets.mp4';
 
+
 function Projets() {
+  
   return (
     <div className="projets">
       <h1>Mes Projets</h1>

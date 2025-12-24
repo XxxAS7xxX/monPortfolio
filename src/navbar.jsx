@@ -1,7 +1,10 @@
 import React from "react"
 import "./styles/navbar.css"
 
+
+
 const Navbar = () => (
+
   <nav className="navbar">
     <div className="navLogo">
       <h1><a href="/" className="btnAccueil">Portfolio</a></h1>
