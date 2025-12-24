@@ -1,9 +1,10 @@
 import './styles/projets.css';
 import bgVideo from './assets/videoProjets.mp4';
+import useOverflow from './useOverflow';
 
 
 function Projets() {
-  
+  useOverflow('scroll');
   return (
     <div className="projets">
       <h1>Mes Projets</h1>
@@ -39,7 +40,7 @@ function Projets() {
                 <video className="video-bg" autoPlay loop muted playsInline>
                   <source src={bgVideo} type="video/mp4" />
                 </video>
-                <td><h2>Projet Gestionnaire de Musique</h2></td>
+                <td><h2>Gestion de Musique</h2></td>
                 
                 <td className='description'>Site de gestion de musique, à partir d'une base de données</td>
                 
@@ -78,7 +79,7 @@ function Projets() {
                 <video className="video-bg" autoPlay loop muted playsInline>
                   <source src={bgVideo} type="video/mp4" />
                 </video>
-                <td><h2>Projet Gestionnaire de Musique</h2></td>
+                <td><h2>Gestion de Musique</h2></td>
                 
                 <td className='description'>Site de gestion de musique, à partir d'une base de données</td>
                 

@@ -1,7 +1,10 @@
 import './styles/accueil.css';
 import bgVideo from './assets/videoAccueil.mp4';
+import useOverflow from './useOverflow';
 
-const Accueil = () => (
+const Accueil = () => {
+  useOverflow('hidden');
+    return (
     <div className="accueil">
         <video
         className="video-bg"
@@ -38,6 +41,6 @@ const Accueil = () => (
             </ul>
         </div>
     </div>
-);
-
+)
+}
 export default Accueil;

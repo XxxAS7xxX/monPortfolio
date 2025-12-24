@@ -5,6 +5,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "code";
+  src: url("../assets/code.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body{
     overflow-y: scroll;
 }
@@ -79,8 +87,10 @@ hr {
     margin:0;
 }
 .description{
+    font-family: 'code', sans-serif;
     background: rgba(0, 0, 0, 0.86);
     height: 34%;
+    padding: 10px 1em 10px 1em;
     margin: 0;
     display: flex;
     align-items: center;
