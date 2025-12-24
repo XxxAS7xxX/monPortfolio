@@ -28,18 +28,20 @@
 .navLink-item {
   cursor: pointer;
 }
-h1>a {
+h1>.btnAccueil {
     color: rgb(215, 215, 215);
+    background: rgba(0, 0, 0, 0);
     text-decoration: none;
     padding: 10px;
     transition: all 0.3s ease;
 }
-h1>a:hover {
+h1>.btnAccueil:hover {
     color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     text-shadow: 0 0 16px yellow;
     transform: scale(1.2);
 }
-.navLink-item a {
+.navLink-item>a {
     color: rgb(215, 215, 215);
     text-decoration: none;
     padding: 10px;
@@ -47,7 +49,7 @@ h1>a:hover {
     background: rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in;
 }
-.navLink-item a:hover {
+.navLink-item>a:hover {
     color: rgb(92, 92, 92);
     transform: scale(2);
     background: rgba(20, 20, 20, 0.8);

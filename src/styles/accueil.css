@@ -83,9 +83,6 @@ body{
     box-shadow: 0 0 20px yellow;
     transform: scale(1.05);
 }
-.box p{
-    
-}
 .box-stages{
     height: 240px;
 }
