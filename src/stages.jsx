@@ -1,6 +1,10 @@
 import './styles/stages.css';
 import useOverflow from './useOverflow';
 import acensi2 from './assets/acensi2.jpg';
+import acensi3 from './assets/stage1/acensi3.png';
+import acensi4 from './assets/stage1/acensi4.png';
+import acensi5 from './assets/stage1/acensi5.png';
+
 function Stages() {
   useOverflow('scroll');
   return (
@@ -19,23 +23,29 @@ function Stages() {
         </div>
         <div className="contenuCardS1">
             <div className="card">
-                <div><h2>Projet Magic Hanout</h2></div>
-                <div className='description'>Site de vente en ligne, de produits fictifs magiques</div>
-                <div><h5>Symfony</h5></div>
-                <div><a href="https://github.com/btssiojvpromo2025-2026/ppe3-microsoft-support-indian-not-scam.git">Aller voir</a></div>
+              <div><h2>Cybersécurité</h2></div>
+              <img src={acensi3} alt="" />
+              <div className='description'>
+                
+                <p>Les experts d'ACENSI vous accompagnent à chaque étape : de la définition de la stratégie à l’implémentation en passant par l’audit et l’optimisation continue de vos dispositifs de cybersécurité</p>
               </div>
+            </div>
             <div className="card">
-                <div><h2>Projet Magic Hanout</h2></div>
-                <div className='description'>Site de vente en ligne, de produits fictifs magiques</div>
-                <div><h5>Symfony</h5></div>
-                <div><a href="https://github.com/btssiojvpromo2025-2026/ppe3-microsoft-support-indian-not-scam.git">Aller voir</a></div>
+              <div><h2>Développement d'application</h2></div>
+              <img src={acensi4} alt="" />
+              <div className='description'>
+                
+                <p>La Digital Factory d'ACENSI conçoit et développe des solutions innovantes en mode agile, en intégrant UX/UI, DevOps et industrialisation pour accélérer la mise sur le marché des produits numériques</p>
               </div>
+            </div>
             <div className="card">
-                <div><h2>Projet Magic Hanout</h2></div>
-                <div className='description'>Site de vente en ligne, de produits fictifs magiques</div>  
-              <div><h5>Symfony</h5></div>
-            <div><a href="https://github.com/btssiojvpromo2025-2026/ppe3-microsoft-support-indian-not-scam.git">Aller voir</a></div>
-          </div>
+              <div><h2>Infrastructure et Cloud</h2></div>
+              <img src={acensi5} alt="" />
+              <div className='description'>
+                
+                <p>ACENSI accompagne la modernisation des infrastructures IT en prenant en compte vos attentes métiers avec des solutions Cloud hybrides, sécurisées et scalables, pour une performance et un équilibre entre souveraineté, performance et coûts</p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
