@@ -1,0 +1,14 @@
+.stages {
+    background: linear-gradient(to bottom, black, blue);
+    color: white;
+    text-align: center;
+}
+.titreS1{
+    margin-top: 2em;
+    text-align: center;
+    justify-content: first baseline;
+    background: url('../assets/acensi1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 650px;
+    color: white;
+}

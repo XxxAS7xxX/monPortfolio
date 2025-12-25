@@ -11,7 +11,7 @@ import Loader from './loader';
 import usePageLoader from './usePageLoader';
 
 function App() {
-    const loading = usePageLoader(1500); // 2 secondes pour le loader
+    const loading = usePageLoader(1500);
 
   if (loading) {
     return <Loader />;
