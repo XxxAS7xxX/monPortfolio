@@ -5,7 +5,7 @@ import "./styles/navbar.css"
 
 const Navbar = () => (
 
-  <nav className="navbar">
+  <nav className="navbar" id="navbar">
     <div className="navLogo">
       <h1><a href="/" className="btnAccueil">Portfolio</a></h1>
     </div>

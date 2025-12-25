@@ -1,5 +1,5 @@
 .stages {
-    background: linear-gradient(to bottom, black, blue);
+    background: linear-gradient(to bottom, black, blue, black, blue, black);
     color: white;
     text-align: center;
 }
@@ -11,4 +11,42 @@
     background-size: cover;
     height: 650px;
     color: white;
+}
+.contenuS1{
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+    margin: 4em 0 4em 0;
+    height: 300px;
+    width: 100vw;
+}
+.imgs1{
+    width: 380px;
+    height: auto;
+    border-radius: 1em;
+    /* box-shadow: 0 0 15px blue; */
+    margin-left: 2em;
+}
+.descriptions1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 2em;
+    height: 100%;
+    width: 60%;
+}
+.contenuCardS1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 4em;
+    height: 80vh;
+}
+.card{
+    height: 60vh;
 }
