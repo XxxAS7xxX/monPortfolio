@@ -6,13 +6,12 @@ const Accueil = () => {
   useOverflow('hidden');
     return (
     <div className="accueil">
-        <video
-        className="video-bg"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
+        <video className="video-bg"
+            autoPlay
+            loop
+            muted
+            playsInline
+        >
         <source src={bgVideo} type="video/mp4" />
       </video>
         <div className="haut">

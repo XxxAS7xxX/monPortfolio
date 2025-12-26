@@ -1,6 +1,6 @@
 import styles from './styles/projets.module.css';
 import bgVideo from './assets/videoProjets.mp4';
-import useOverflow from './useOverflow'; // Votre chemin original
+import useOverflow from './useOverflow'; 
 
 function Projets() {
   useOverflow('scroll');
