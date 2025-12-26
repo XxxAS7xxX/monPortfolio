@@ -5,6 +5,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "code";
+  src: url("../assets/code.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body{
     overflow: hidden;
 }
@@ -51,10 +58,12 @@ body{
     margin-top: 5%;
 }
 .box-accueil h1{
+    font-family: "orbitron", sans-serif;
     font-size: 1.8em;
     text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .box{
+    font-family: "code", sans-serif;
     box-shadow: 0 0 20px rgb(158, 158, 158);
     background: radial-gradient(circle, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.5));
     padding: 1em;
@@ -69,6 +78,7 @@ body{
     height: 200px;
 }
 .box>a{
+    font-family: sans-serif;
     text-decoration: none;
     color: white;
     font-weight: bold;

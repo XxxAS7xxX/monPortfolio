@@ -10,7 +10,7 @@ function Projets() {
       <h1>Mes Projets</h1>
       
       <div className={styles.projectsGrid}>
-        {/* Première rangée */}
+
         <div className={styles.row}>
           <div className={styles.card}>
             <video className={styles.videoBg} autoPlay loop muted playsInline>
@@ -54,6 +54,7 @@ function Projets() {
             </a>
           </div>
         </div>
+        
         <div className={styles.row}>
           <div className={styles.card}>
             <video className={styles.videoBg} autoPlay loop muted playsInline>
