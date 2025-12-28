@@ -7,7 +7,9 @@ function Competences() {
   return (
     <div className={styles.competences}>
       <h1>Mes Compétences</h1>
-      <p>Technologies maîtrisées...</p>
+      <div className={styles.language}>
+        <h2>Langages de Programmation</h2>
+      </div>
       <img src={js} alt="JavaScript" />
       <img src={reactLogo} alt="React" />
       <img src={php} alt="PHP" />
