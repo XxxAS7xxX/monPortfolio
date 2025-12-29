@@ -5,6 +5,8 @@ import php from './assets/php.png';
 import python from './assets/python.png';
 import csharp from './assets/Csharp.png';
 import symfony from './assets/symfony.png';
+import mui from './assets/mui.png';
+import bootstrap from './assets/bootstrap.png';
 import windows from './assets/windows.png';
 import linux from './assets/linux.png';
 import ubuntu from './assets/ubuntu.png';
@@ -47,8 +49,16 @@ function Competences() {
             <p>React</p>
           </div>
           <div className={styles.framework}>
+            <img src={mui} alt="Mui Logo" />
+            <p>Mui</p>
+          </div>
+          <div className={styles.framework}>
             <img src={symfony} alt="Symfony Logo" />
             <p>Symfony</p>
+          </div>
+          <div className={styles.framework}>
+            <img src={bootstrap} alt="Bootstrap Logo" />
+            <p>Bootstrap</p>
           </div>
         </div>
       </div>
