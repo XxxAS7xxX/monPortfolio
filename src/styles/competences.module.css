@@ -1,0 +1,98 @@
+.competences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, black, grey);
+}
+.competences h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.language{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.6);
+    width: 88vw;
+    height: 50vh;
+    border-radius: 2em;
+}
+.language h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo img{
+    height: 100px;
+}
+.logo p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.frameworkContainer{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.6);
+    width: 88vw;
+    height: 50vh;
+    border-radius: 2em;
+}
+.frameworkContainer h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.frameworks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.framework p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.systemeExploitation{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.6);
+    width: 88vw;
+    height: 50vh;
+    border-radius: 2em;
+}
+.systemeExploitation h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.systemes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.systeme p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
