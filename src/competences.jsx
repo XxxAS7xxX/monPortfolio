@@ -8,6 +8,7 @@ import symfony from './assets/symfony.png';
 import windows from './assets/windows.png';
 import linux from './assets/linux.png';
 import ubuntu from './assets/ubuntu.png';
+import macos from './assets/macos.png';
 import useOverflow from './useOverflow';
 
 
@@ -51,23 +52,23 @@ function Competences() {
           </div>
         </div>
       </div>
-      <div className="systemeExploitation">
+      <div className={styles.systemeExploitation}>
         <h2>Systèmes d'Exploitation</h2>
-          <div className="systemes">
-            <div className="systeme">
+          <div className={styles.systemes}>
+            <div className={styles.systeme}>
               <img src={windows} alt="Windows Logo" />
               <p>Windows</p>
             </div>
-            <div className="systeme">
+            <div className={styles.systeme}>
               <img src={linux} alt="Linux Logo" />
               <p>Linux</p>
             </div>
-            <div className="systeme">
+            <div className={styles.systeme}>
               <img src={ubuntu} alt="Ubuntu Logo" />
               <p>Ubuntu</p>
             </div>
-            <div className="systeme">
-              <img src="" alt="" />
+            <div className={styles.systeme}>
+              <img src={macos} alt="MacOS Logo" />
               <p>MacOS</p>
             </div>
           </div>
