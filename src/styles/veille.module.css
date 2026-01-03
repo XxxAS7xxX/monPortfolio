@@ -1,0 +1,38 @@
+.veille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background: linear-gradient(to bottom, black, grey);
+}
+.veille h1{
+    color: white;
+    font-size: 2.2em;
+    font-family: 'orbitron', sans-serif;
+}
+.veille p{
+    color: white;
+    font-family: 'code', monospace;
+    font-size: 1.2em;
+    width: 70%;
+    text-align: center;
+}
+.veilleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2em;
+    padding: 2em;
+    width: 80vw;
+}
+.veilleContainer iframe{
+    width: 100%;
+    height: 70vh;
+    border-radius: 1em;
+    border: none;
+    margin-top: 2em;
+}
