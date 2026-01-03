@@ -4,6 +4,7 @@ import acensi2 from './assets/acensi2.jpg';
 import acensi3 from './assets/stage1/acensi3.png';
 import acensi4 from './assets/stage1/acensi4.png';
 import acensi5 from './assets/stage1/acensi5.png';
+import Slider from './slider.jsx';
 
 function Stages() {
   useOverflow('scroll');
@@ -91,6 +92,7 @@ function Stages() {
             et la gestion de projet selon les principes agiles.</p>
             
         </div>
+        <Slider />
       </div>
     </div>
   )

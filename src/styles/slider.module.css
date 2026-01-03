@@ -1,0 +1,118 @@
+.container {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(31, 41, 55, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  padding-bottom: 4em;
+}
+
+.wrapper {
+  width: 75%;
+  max-width: 80rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-family: 'orbitron', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sliderContainer {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  height: 26rem;
+  overflow: hidden;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.image {
+    height: 100%;
+    width: 84%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.buttonLeft,
+.buttonRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonLeft:hover,
+.buttonRight:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.buttonLeft {
+  left: 1rem;
+}
+
+.buttonRight {
+  right: 1rem;
+}
+
+.description {
+  padding: 2rem;
+}
+
+.projectTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.projectDescription {
+  color: rgb(209, 213, 219);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background: rgb(107, 114, 128);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot:hover {
+  background: rgb(156, 163, 175);
+}
+
+.dotActive {
+  background: white;
+  width: 2rem;
+}

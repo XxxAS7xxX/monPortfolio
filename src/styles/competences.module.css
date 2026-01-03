@@ -145,6 +145,7 @@
     text-align: center;
     color: white;
     font-size: 2.5em;
+    padding: 0.6em;
 }
 .outils{
     display: flex;
