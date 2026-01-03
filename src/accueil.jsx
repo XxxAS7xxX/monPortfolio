@@ -39,6 +39,8 @@ const Accueil = () => {
                     <Link to="/competences">Aller voir</Link>
                 </div>
             </ul>
+            <Link to="/profil" className='btnProfil'><i className="fa-solid fa-person"></i></Link>
+            <Link to="/veille" className='btnVeille'><i className="fa-solid fa-magnifying-glass"></i></Link>
         </div>
     </div>
 )
