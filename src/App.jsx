@@ -5,7 +5,7 @@ import Accueil from './accueil.jsx'
 import Projets from './projets.jsx'
 import Stages from './stages.jsx'
 import Competences from './competences.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Loader from './loader';
 import usePageLoader from './usePageLoader';
 
@@ -16,7 +16,7 @@ function App() {
     return <Loader />;
   }
   return (
-    <BrowserRouter basename="/monPortfolio">
+    <HashRouter>
       <div className="App">
         <header>
           <Navbar />
@@ -31,7 +31,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
