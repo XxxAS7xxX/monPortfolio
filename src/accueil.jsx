@@ -1,4 +1,5 @@
 import './styles/accueil.css';
+import { Link } from 'react-router-dom';
 import bgVideo from './assets/videoAccueil.mp4';
 import useOverflow from './useOverflow';
 
@@ -25,17 +26,17 @@ const Accueil = () => {
                 <div className="box-projets box">
                     <h1>Projets</h1>
                     <p>Découvrez les différents projets réalisés au cours de ma formation et en dehors</p>
-                    <a href="/projets">Aller voir</a>
+                    <Link to="/projets">Aller voir</Link>
                 </div>
                 <div className="box-stages box">
                     <h1>Stages</h1>
                     <p>Explorez les différents stages, illustrant mon adaptation et ma contribution dans des environnements réels.</p>
-                    <a href="/stages">Aller voir</a>
+                    <Link to="/stages">Aller voir</Link>
                 </div>
                 <div className="box-competences box">
                     <h1>Compétences</h1>
                     <p>Découvrez mes compétences techniques et professionnelles acquises au cours de ma formation et de mes expériences.</p>
-                    <a href="/competences">Aller voir</a>
+                    <Link to="/competences">Aller voir</Link>
                 </div>
             </ul>
         </div>
