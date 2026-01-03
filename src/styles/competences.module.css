@@ -4,11 +4,12 @@
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(to bottom, black, grey);
+    padding-bottom: 4em;
 }
 .competences h1{
     color: white;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 3em;
+    margin-bottom: 2em;
 }
 .language{
     display: flex;
@@ -17,19 +18,29 @@
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.6);
     width: 88vw;
-    height: 50vh;
+    min-height: 50vh;
     border-radius: 2em;
+    padding: 1em;
 }
 .language h2{
     text-align: center;
     color: white;
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 2.5em;
+    margin-top: 1em;
 }
 .logos{
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 2em;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .logo img{
     height: 100px;
@@ -37,62 +48,123 @@
 .logo p{
     text-align: center;
     color: white;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-size: 1.2em;
+    margin-top: 0.5em;
 }
 .frameworkContainer{
-    margin-top: 3rem;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     justify-self: center;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.6);
     width: 88vw;
-    height: 50vh;
+    min-height: 50vh;
     border-radius: 2em;
+    padding: 1em;
 }
 .frameworkContainer h2{
     text-align: center;
     color: white;
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 2.5em;
 }
 .frameworks{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 2em;
+}
+.framework{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.framework img{
+    height: 100px;
 }
 .framework p{
     text-align: center;
     color: white;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-size: 1.2em;
+    margin-top: 0.5em;
 }
 .systemeExploitation{
-    margin-top: 3rem;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     justify-self: center;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.6);
     width: 88vw;
-    height: 50vh;
+    min-height: 50vh;
     border-radius: 2em;
+    padding: 1em;
 }
 .systemeExploitation h2{
     text-align: center;
     color: white;
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 2.5em;
 }
 .systemes{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 2em;
+}
+.systeme{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.systeme img{
+    height: 100px;
 }
 .systeme p{
     text-align: center;
     color: white;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+.outilsContainer{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.6);
+    width: 88vw;
+    min-height: 50vh;
+    border-radius: 2em;
+    padding: 1em;
+}
+.outilsContainer h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+.outils{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3em;
+}
+.outil{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.outil img{
+    height: 100px;
+}
+.outil p{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 0.5em;
 }

@@ -18,6 +18,9 @@ import vscode from './assets/vscode.png';
 import postman from './assets/postman.png';
 import github from './assets/github.png';
 import cisco from './assets/cisco.png';
+import npm from './assets/npm.png';
+import jira from './assets/jira.png';
+import blender from './assets/blender.png';
 import useOverflow from './useOverflow';
 
 
@@ -120,7 +123,19 @@ function Competences() {
           <div className={styles.outil}>
             <img src={cisco} alt="Cisco Logo" />
             <p>Cisco Packet Tracer</p>
-          </div> 
+          </div>
+          <div className={styles.outil}>
+            <img src={npm} alt="NPM Logo" />
+            <p>NPM</p>
+          </div>
+          <div className={styles.outil}>
+            <img src={jira} alt="Jira Logo" />
+            <p>Jira</p>
+          </div>
+          <div className={styles.outil}>
+            <img src={blender} alt="Blender Logo" />
+            <p>Blender</p>
+          </div>
         </div>
       </div>
     </div>
