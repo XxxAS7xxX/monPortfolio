@@ -16,7 +16,7 @@ function App() {
     return <Loader />;
   }
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/monPortfolio">
       <div className="App">
         <header>
           <Navbar />
