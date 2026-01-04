@@ -88,12 +88,12 @@ function Projets() {
             <video className={styles.videoBg} autoPlay loop muted playsInline>
               <source src={bgVideo} type="video/mp4" />
             </video>
-            <h2>Gestion de Musique</h2>
+            <h2>Jeu QIX</h2>
             <p className={styles.description}>
-              Site de gestion de musique, à partir d'une base de données
+              Projet d'etude en python, recréation du jeu QIX avec une bibliothèque très limitée
             </p>
-            <h5>Symfony</h5>
-            <a href="https://github.com/btssiojvpromo2025-2026/gestionmusique-XxxAS7xxX.git">
+            <h5>Python</h5>
+            <a href="https://github.com/XxxAS7xxX/QIX.git">
               Aller voir
             </a>
           </div>
