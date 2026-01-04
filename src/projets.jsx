@@ -60,12 +60,12 @@ function Projets() {
             <video className={styles.videoBg} autoPlay loop muted playsInline>
               <source src={bgVideo} type="video/mp4" />
             </video>
-            <h2>Projet Magic Hanout</h2>
+            <h2>Projet LabJS</h2>
             <p className={styles.description}>
-              Site de vente en ligne, de produits fictifs magiques
+              Site brouillon pour tester des fonctionnalités en JavaScript avec plusieurs mini-projets
             </p>
-            <h5>Symfony</h5>
-            <a href="https://github.com/btssiojvpromo2025-2026/ppe3-microsoft-support-indian-not-scam.git">
+            <h5>Javascript, html, css</h5>
+            <a href="https://github.com/XxxAS7xxX/siteLabJS.git">
               Aller voir
             </a>
           </div>
@@ -74,12 +74,12 @@ function Projets() {
             <video className={styles.videoBg} autoPlay loop muted playsInline>
               <source src={bgVideo} type="video/mp4" />
             </video>
-            <h2>Extension Chrome</h2>
+            <h2>Projet Animaux</h2>
             <p className={styles.description}>
-              Prise en main des outils de développement chrome, afin de créer une extension
+              Prise en main de react et MUI a travers un site sur les animaux et leurs caractéristiques
             </p>
-            <h5>Json, environnement chrome</h5>
-            <a href="https://github.com/XxxAS7xxX/chromeFH.git">
+            <h5>React, Mui</h5>
+            <a href="https://github.com/XxxAS7xxX/react-app.git">
               Aller voir
             </a>
           </div>
