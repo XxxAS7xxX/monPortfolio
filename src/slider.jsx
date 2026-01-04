@@ -3,7 +3,7 @@ import styles from './styles/slider.module.css';
 import img1 from './assets/installationAcenstream.jpg';
 import img2 from './assets/extraitCode1.png';
 import img3 from './assets/extraitCode2.png';
-// import img4 from './assets/slider/img4.jpg';
+import img4 from './assets/extraitCode3.png';
 
 //fait en grande partie par une IA
 
@@ -20,20 +20,20 @@ function Slider() {
     {
       id: 2,
       image: img2,
-      title: 'Extrait de code',
+      title: 'Extrait de code react',
       description: "Extrait de code react pour automatiser l'affichage de données d'une certaine manière."
     },
     {
       id: 3,
       image: img3,
-      title: 'Extrait de code',
+      title: 'Extrait de code react',
       description: 'Extrait de code react montrant la structure d\'un formulaire.'
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800',
-      title: 'Projet 4',
-      description: 'Description de votre quatrième projet avec ses spécificités.'
+      image: img4,
+      title: 'Extrait de code JavaScript',
+      description: 'Extrait de code JavaScript montrant la structure de fonction d\'un mini projet.'
     }
   ];
 
