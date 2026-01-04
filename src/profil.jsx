@@ -29,6 +29,7 @@ const Profil = () => {
             </div>
         </div>
         <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer" className={styles.btnCv}>Télécharger mon CV</a>
+        <a href="https://github.com/XxxAS7xxX" className={styles.btnGithub}>Mon GitHub</a>
     </div>
   );
 };

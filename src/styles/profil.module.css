@@ -56,3 +56,22 @@
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
     transform: scale(1.05);
 }
+.btnGithub{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    background-color: yellow;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    transition: all 0.3s ease;
+}
+.btnGithub:hover {
+    background-color: #ffd700;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+    transform: scale(1.05);
+}   
