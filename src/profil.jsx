@@ -1,6 +1,7 @@
 import styles from './styles/profil.module.css';
 import photoProfil from './assets/portraitphoto.avif';
 import useOverflow from './useOverflow';
+import { Link } from 'react-router-dom';
 
 
 const Profil = () => {
@@ -29,6 +30,7 @@ const Profil = () => {
             </div>
         </div>
         <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer" className={styles.btnCv}>Télécharger mon CV</a>
+        <Link to="/formation" className={styles.btnFormation}>Ma Formation</Link>
         <a href="https://github.com/XxxAS7xxX" className={styles.btnGithub}>Mon GitHub</a>
     </div>
   );
