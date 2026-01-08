@@ -6,6 +6,7 @@ import Projets from './projets.jsx'
 import Stages from './stages.jsx'
 import Profil from './profil.jsx'
 import Veille from './veille.jsx'
+import Certification from './certification.jsx'
 import Formation from './formation.jsx'
 import Competences from './competences.jsx'
 import { HashRouter, Routes, Route } from 'react-router-dom'
@@ -34,6 +35,7 @@ function App() {
             <Route path="/profil" element={<Profil />} />
             <Route path="/veille" element={<Veille />} />
             <Route path="/formation" element={<Formation />} />
+            <Route path="/certification" element={<Certification />} />
           </Routes>
         </main>
       </div>

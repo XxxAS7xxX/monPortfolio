@@ -11,6 +11,7 @@ const Navbar = () => (
       <li className="navLink-item"><Link to="/projets" className="btnAccueil">projets</Link></li>
       <li className="navLink-item"><Link to="/stages" className="btnAccueil">stages</Link></li>
       <li className="navLink-item"><Link to="/competences" className="btnAccueil">compétences</Link></li>
+      <li className="navLink-item"><Link to="/certification" className="btnAccueil">certifications</Link></li>
     </ul>
   </nav>
 )
