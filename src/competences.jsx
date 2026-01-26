@@ -7,6 +7,7 @@ import csharp from './assets/Csharp.png';
 import html5 from './assets/html5.png';
 import css from './assets/css.png';
 import sql from './assets/sql.png';
+import rust from './assets/rust.png';
 import symfony from './assets/symfony.png';
 import mui from './assets/mui.png';
 import bootstrap from './assets/bootstrap.png';
@@ -20,6 +21,7 @@ import github from './assets/github.png';
 import cisco from './assets/cisco.png';
 import npm from './assets/npm.png';
 import jira from './assets/jira.png';
+import openvpn from './assets/openvpn.png';
 import blender from './assets/blender.png';
 import useOverflow from './useOverflow';
 
@@ -56,6 +58,10 @@ function Competences() {
           <div className={styles.logo}>
             <img src={csharp} alt="C# Logo" />
             <p>C#</p>
+          </div>
+          <div className={styles.logo}>
+            <img src={rust} alt="Rust Logo" />
+            <p>Rust</p>
           </div>
           <div className={styles.logo}>
             <img src={sql} alt="SQL Logo" />
@@ -131,6 +137,10 @@ function Competences() {
           <div className={styles.outil}>
             <img src={jira} alt="Jira Logo" />
             <p>Jira</p>
+          </div>
+          <div className={styles.outil}>
+            <img src={openvpn} alt="OpenVPN Logo" />
+            <p>OpenVPN</p>
           </div>
           <div className={styles.outil}>
             <img src={blender} alt="Blender Logo" />
