@@ -4,6 +4,7 @@ import Navbar from './navbar.jsx'
 import Accueil from './accueil.jsx'
 import Projets from './projets.jsx'
 import Stages from './stages.jsx'
+import Stages2 from './stages2.jsx'
 import Profil from './profil.jsx'
 import Veille from './veille.jsx'
 import Certification from './certification.jsx'
@@ -31,6 +32,7 @@ function App() {
             <Route path="/" element={<Accueil />} />
             <Route path="/projets" element={<Projets />} />
             <Route path="/stages" element={<Stages />} />
+            <Route path="/stages2" element={<Stages2 />} />
             <Route path="/competences" element={<Competences />} />
             <Route path="/profil" element={<Profil />} />
             <Route path="/veille" element={<Veille />} />
