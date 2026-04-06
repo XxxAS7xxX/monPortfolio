@@ -40,10 +40,10 @@
   align-items: center;
   justify-content: center;
   gap: 0.6em;
-  /* Remplace par ton image de fond :
-     background: url('../assets/stage2/bt-banner.jpg') no-repeat center center;
-     background-size: cover; */
-  background: linear-gradient(135deg, #0b1929 0%, #1a3a6b 50%, #0d2a55 100%);
+  /* Remplace par ton image de fond : */
+     background: url('../assets/stage2/bt-banner.png') no-repeat center center;
+     background-size: cover;
+  /* background: linear-gradient(135deg, #0b1929 0%, #1a3a6b 50%, #0d2a55 100%); */
   height: 650px;
   position: relative;
   overflow: hidden;
@@ -78,8 +78,8 @@
   font-size: 0.9em;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #e85d04;
-  background: rgba(232, 93, 4, 0.12);
+  color: #a03d00;
+  background: rgba(232, 93, 4, 0.22);
   border: 1px solid rgba(232, 93, 4, 0.4);
   padding: 0.4em 1.2em;
   border-radius: 2em;
@@ -103,10 +103,11 @@
 .entrepriseSub {
   font-family: 'code', sans-serif;
   font-size: 1.1em;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgb(255, 255, 255);
   max-width: 480px;
   position: relative;
   z-index: 1;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
 /* ══════════════════════════════════
@@ -142,6 +143,9 @@
   margin-left: 2em;
   box-shadow: 0 0 30px rgba(232, 93, 4, 0.3);
   flex-shrink: 0;
+}
+.logoPlaceholder img {
+  border-radius: 1em;
 }
 
 .logoPlaceholder span:first-child {

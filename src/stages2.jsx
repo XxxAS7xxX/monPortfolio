@@ -1,6 +1,7 @@
 import styles from './styles/stages2.module.css';
 import useOverflow from './useOverflow';
 import SliderBT from './sliderBT.jsx';
+import btLogo from './assets/stage2/bt-regulation-logo.jfif';
 
 // Remplace ces imports par tes vraies images
 // import btLogo from './assets/stage2/bt-logo.png';
@@ -27,8 +28,7 @@ function Stages2() {
         <div className={styles.contenuS2}>
           {/* Placeholder logo — remplace par <img src={btLogo} … /> */}
           <div className={styles.logoPlaceholder}>
-            <span>BT</span>
-            <span className={styles.logoSub}>RÉGULATION</span>
+            <img src={btLogo} alt="Logo BT-Régulation" />
           </div>
           <div className={styles.descriptionS2}>
             <h2>Qu'est-ce que BT-Régulation ?</h2>
