@@ -1,100 +1,139 @@
-import styles from './styles/stages.module.css';
+import styles from './styles/stages2.module.css';
 import useOverflow from './useOverflow';
-import acensi2 from './assets/acensi2.jpg';
-import acensi3 from './assets/stage1/acensi3.png';
-import acensi4 from './assets/stage1/acensi4.png';
-import acensi5 from './assets/stage1/acensi5.png';
-import Slider from './slider.jsx';
+import SliderBT from './sliderBT.jsx';
+
+// Remplace ces imports par tes vraies images
+// import btLogo from './assets/stage2/bt-logo.png';
+// import vigilia1 from './assets/stage2/vigilia1.png';
+// import vigilia2 from './assets/stage2/vigilia2.png';
+// import vigilia3 from './assets/stage2/vigilia3.png';
 
 function Stages2() {
   useOverflow('scroll');
   return (
     <div className={styles.stages}>
-      <h1 style={{padding:'1em 0 0.4em 0', fontSize:'3em', fontFamily:'orbitron'}}>Mes Stages</h1>
-      <div className={styles.stage1}>
-        <div className={styles.titreS1}>
-          <h1 style={{padding:'0.6em 0 0 0', fontSize:'2.4em', fontFamily:'orbitron'}}>Stage 1</h1>
+      <h1 className={styles.mainTitle}>Mes Stages</h1>
+
+      <div className={styles.stage2}>
+
+        {/* ── Bandeau titre avec image de fond BT ── */}
+        <div className={styles.titreS2}>
+          <div className={styles.titreBadge}>Stage 2</div>
+          <h2 className={styles.entrepriseName}>BT-Régulation <span>&amp;</span> Vigilia IoT</h2>
+          <p className={styles.entrepriseSub}>Solutions de régulation de chauffage collectif connecté</p>
         </div>
-        <div className={styles.contenuS1}>
-          <img src={acensi2} alt="" className={styles.imgs1}/>
-          <div className={styles.descriptions1}>
-            <h1>Qu'est ce que Acensi</h1>
-            <p >ACENSI est une société de services du numérique (ESN) spécialisée dans le conseil en informatique et la transformation digitale. Fondée en 2003, elle accompagne les grandes entreprises et les institutions dans la conception, le développement et la mise en œuvre de solutions technologiques innovantes. Présente en France et à l’international, ACENSI intervient dans divers secteurs tels que la finance, l’assurance, l’énergie ou encore les télécommunications, en mettant l’accent sur l’expertise technique, la qualité des prestations et la proximité avec ses clients.</p>
+
+        {/* ── Présentation entreprise ── */}
+        <div className={styles.contenuS2}>
+          {/* Placeholder logo — remplace par <img src={btLogo} … /> */}
+          <div className={styles.logoPlaceholder}>
+            <span>BT</span>
+            <span className={styles.logoSub}>RÉGULATION</span>
+          </div>
+          <div className={styles.descriptionS2}>
+            <h2>Qu'est-ce que BT-Régulation ?</h2>
+            <p>
+              BT-Régulation est une entreprise spécialisée dans la régulation de chauffage collectif
+              et la gestion énergétique des bâtiments. Elle développe <strong>Vigilia IoT</strong>,
+              une solution connectée permettant la supervision en temps réel des installations de
+              chauffage, l'optimisation de la consommation énergétique et la maintenance prédictive.
+              La plateforme s'adresse aux gestionnaires d'immeubles, syndics et bailleurs sociaux
+              souhaitant moderniser leurs infrastructures thermiques tout en réduisant leur impact
+              environnemental.
+            </p>
           </div>
         </div>
-        <div className={styles.contenuCardS1}>
-            <div className={styles.card}>
-              <div><h2>Cybersécurité</h2></div>
-              <img src={acensi3} alt="" />
-              <div className={styles.description}>
-                
-                <p>Les experts d'ACENSI vous accompagnent à chaque étape : de la définition de la stratégie à l’implémentation en passant par l’audit et l’optimisation continue de vos dispositifs de cybersécurité</p>
-              </div>
+
+        {/* ── Cartes expertises ── */}
+        <div className={styles.contenuCardS2}>
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>🌐</div>
+            <h2>Développement Web</h2>
+            <div className={styles.cardDescription}>
+              <p>
+                Adaptation et évolution d'une application React intégrée dans un environnement PHP,
+                gestion des routes et des redirections d'URL selon les contraintes du serveur.
+              </p>
             </div>
-            <div className={styles.card}>
-              <div><h2>Développement d'application</h2></div>
-              <img src={acensi4} alt="" />
-              <div className={styles.description}>
-                
-                <p>La Digital Factory d'ACENSI conçoit et développe des solutions innovantes en mode agile, en intégrant UX/UI, DevOps et industrialisation pour accélérer la mise sur le marché des produits numériques</p>
-              </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>🔒</div>
+            <h2>Infrastructure &amp; VPN</h2>
+            <div className={styles.cardDescription}>
+              <p>
+                Configuration d'un VPN OpenVPN sur un serveur de développement pour sécuriser
+                les accès distants et garantir la confidentialité des échanges techniques.
+              </p>
             </div>
-            <div className={styles.card}>
-              <div><h2>Infrastructure et Cloud</h2></div>
-              <img src={acensi5} alt="" />
-              <div className={styles.description}>
-                
-                <p>ACENSI accompagne la modernisation des infrastructures IT en prenant en compte vos attentes métiers avec des solutions Cloud hybrides, sécurisées et scalables, pour une performance et un équilibre entre souveraineté, performance et coûts</p>
-              </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>🔥</div>
+            <h2>IoT &amp; Chauffage</h2>
+            <div className={styles.cardDescription}>
+              <p>
+                Développement de fonctionnalités métier autour de la régulation de chauffage
+                collectif : audit guidé, génération de devis, export PDF et cohérence UI.
+              </p>
             </div>
+          </div>
         </div>
+
+        {/* ── Section missions ── */}
         <div className={styles.realisation}>
           <h2>Missions et travaux réalisés</h2>
 
-          <h3>Service Desk (4 semaines)</h3>
-          <p>Durant le premier mois de mon stage, j'ai intégré le service desk d'Acensi, 
-            dont la mission principale est d'assurer le support technique aux collaborateurs 
-            et de garantir le bon fonctionnement de l'infrastructure informatique.</p>
-
-          <h3>Préparation et maintenance du matériel</h3>
-          <p>J'ai pris en charge la préparation complète des postes de travail, 
-            incluant l'installation de l'environnement d'entreprise via clé bulk pour l'enrôlement des machines, 
-            ainsi que des interventions matérielles telles que le remplacement de disques SSD et l'ajout de barrettes RAM. 
-            J'ai également géré le déploiement des téléphones professionnels en utilisant Apple Configurator pour l'enrôlement 
-            et l'installation des protections de sécurité nécessaires.</p>
-
-          <h3>Support technique et gestion des incidents</h3>
-          <p>Mon rôle comprenait la résolution d'incidents variés : dépannage d'imprimantes, 
-            intervention directe dans les différents services suite aux tickets remontés par les utilisateurs, 
-            et orientation des demandes vers les équipes spécialisées lorsque celles-ci dépassaient mon périmètre d'action. 
-            Cette expérience m'a permis de développer mes compétences en diagnostic technique et en relation client interne.
+          <h3>Configuration VPN avec OpenVPN</h3>
+          <p>
+            L'une de mes premières missions a été la mise en place d'un tunnel VPN sécurisé
+            à l'aide d'OpenVPN sur le serveur de développement de l'entreprise. Cela permettait
+            aux développeurs de travailler à distance en accédant aux ressources internes de façon
+            sécurisée, tout en isolant l'environnement de test du réseau public.
           </p>
-          
-          <h3 style={{margin:'3em 0 1em 0'}}>Équipe de développement (2 semaines)</h3>
-          <p>Pour la seconde partie de mon stage, j'ai rejoint l'équipe de développement web, 
-            découvrant ainsi un environnement professionnel orienté méthodologie agile.</p>
 
-          <h3>Environnement technique</h3>
-          <p>J'ai configuré mon environnement de travail en utilisant WSL (Windows Subsystem for Linux) afin de travailler sur Ubuntu, 
-            conformément aux standards de l'équipe. Les développeurs utilisent principalement React comme framework 
-            et appliquent la méthode Scrum pour organiser leur travail.</p>
+          <h3>Adaptation de code React dans un environnement PHP</h3>
+          <p>
+            Le site de Vigilia IoT repose sur une architecture PHP. Ma mission a consisté à intégrer
+            des composants React dans cet environnement hybride, en adaptant notamment la gestion
+            des routes et des redirections d'URL pour les rendre compatibles avec le routage
+            côté serveur PHP. Ce travail m'a confronté aux défis réels de l'intégration frontend
+            dans des systèmes legacy.
+          </p>
 
-          <h3>Apprentissage et réalisations</h3>
-          <p>N'ayant jamais pratiqué JavaScript auparavant, j'ai commencé par réaliser un site test regroupant plusieurs mini-projets, 
-            dont un jeu inspiré du dinosaure de Google Chrome. 
-            Ces exercices pratiques m'ont permis de monter en compétence sur les fondamentaux du langage. j'ai par la suite on a voulu me mettre sur un projet interne</p>
+          <h3>Développement de l'outil d'audit chaufferie</h3>
+          <p>
+            J'ai développé une nouvelle fonctionnalité majeure : un audit guidé destiné à des
+            personnes sans connaissance technique en chaufferie. Sous forme de formulaire multi-étapes,
+            l'outil accompagne l'utilisateur section par section pour recueillir les informations
+            nécessaires au diagnostic (photos des équipements, références, états), puis génère
+            automatiquement un rapport PDF envoyé par e-mail aux équipes commerciales. Ce module
+            permet à BT-Régulation d'accélérer la phase de devis et de réduire les déplacements
+            techniques non nécessaires.
+          </p>
 
-          <h3>Immersion dans la méthode agile</h3>
-          <p>J'ai participé à l'ensemble des cérémonies Scrum (daily meetings, sprint planning, retrospective), 
-            ce qui m'a offert une vision complète du cycle de développement d'un projet client 
-            et des interactions entre les différents membres de l'équipe. 
-            Cette expérience m'a fait découvrir les enjeux du développement en environnement professionnel 
-            et la gestion de projet selon les principes agiles.</p>
-            
+          <h3>Déploiement des nouvelles fonctionnalités</h3>
+          <p>
+            Après le développement, j'ai participé au déploiement des nouvelles fonctionnalités
+            sur l'environnement de production, en m'assurant de la stabilité des mises à jour
+            et de la bonne intégration avec les modules existants du site.
+          </p>
+
+          <h3>Cohérence esthétique du site</h3>
+          <p>
+            Pour garantir une expérience utilisateur homogène, j'ai travaillé à harmoniser
+            le design des nouvelles sections avec le reste du site Vigilia IoT : respect de la
+            charte graphique, alignement des composants, uniformisation des espacements
+            et des typographies afin que chaque page s'inscrive dans une continuité visuelle claire.
+          </p>
         </div>
-        <Slider />
+
+        {/* ── Slider ── */}
+        <SliderBT />
+
       </div>
     </div>
-  )
+  );
 }
-export default Stages2
+
+export default Stages2;
