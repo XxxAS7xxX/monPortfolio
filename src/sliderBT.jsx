@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import styles from './styles/sliderBT.module.css';
+import sc_rust from './assets/stage2/screen_rust.png';
+import sc_deploi from './assets/stage2/screen_deploiement.png';
 
 // ── Remplace les imports par tes vraies images ──
 // import img1 from './assets/stage2/vpn-config.png';
@@ -14,14 +16,14 @@ function SliderBT() {
   const slides = [
     {
       id: 1,
-      // image: img1,
-      image: null, // retire ce null une fois tes images importées
-      placeholder: 'VPN OpenVPN',
-      title: 'Configuration VPN — OpenVPN',
+      image: sc_rust,
+      placeholder: 'Rust',
+      title: 'Initiation au langage Rust',
       description:
-        'Mise en place du tunnel VPN sur le serveur de développement. ' +
-        'Configuration des certificats, des routes réseau et des droits d\'accès ' +
-        'pour permettre aux développeurs de travailler à distance en toute sécurité.',
+        'Durant ce stage, je me suis initié à Rust, un langage système axé sur la ' +
+        'sécurité mémoire et les performances. J\'ai découvert ses concepts fondamentaux ' +
+        'tels que l\'ownership, le borrowing et les types stricts, qui font de Rust ' +
+        'un langage particulièrement rigoureux et fiable.',
     },
     {
       id: 2,
@@ -45,16 +47,16 @@ function SliderBT() {
         'par e-mail sous forme de rapport PDF structuré. Cette fonctionnalité automatise ' +
         'entièrement la phase de pré-devis pour les équipes BT-Régulation.',
     },
-    {
+     {
       id: 4,
-      // image: img4,
-      image: null,
-      placeholder: 'React + PHP',
-      title: 'Intégration React dans un environnement PHP',
+      image: sc_deploi,
+      placeholder: 'Déploiement',
+      title: 'Déploiement et hébergement',
       description:
-        'Adaptation du routage et des redirections URL React pour les rendre compatibles ' +
-        'avec l\'architecture PHP du site Vigilia IoT. Travail d\'harmonisation ' +
-        'esthétique pour assurer la cohérence visuelle entre toutes les pages.',
+        'Mise en ligne des nouvelles fonctionnalités développées durant le stage. ' +
+        'Cette étape comprenait la préparation de l\'environnement de production, ' +
+        'la vérification de l\'intégration avec les modules existants et le suivi ' +
+        'de la stabilité après déploiement.',
     },
   ];
 
