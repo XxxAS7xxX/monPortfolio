@@ -22,9 +22,10 @@ function ProjetDetail() {
     <div className={styles.page}>
 
       {/* ── Vidéo en fond global ── */}
-      <video className={styles.videoBg} autoPlay loop muted playsInline>
+      {/* <video className={styles.videoBg} autoPlay loop muted playsInline>
         <source src={bgVideo} type="video/mp4" />
-      </video>
+      </video> */}
+      <div className={styles.fondProjetDetail}></div>
       <div className={styles.overlay} />
 
       <div className={styles.content}>

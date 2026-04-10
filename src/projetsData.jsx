@@ -3,6 +3,18 @@ export const projets = [
     id: 'magic-hanout',
     titre: 'Projet Magic Hanout',
     description: 'Site de vente en ligne, de produits fictifs magiques',
+    descriptionLongue:
+    'Magic Hanout est un site e-commerce fictif à thème dark fantaisiste développé avec Symfony. ' +
+    'Il repose sur 3 entités principales — Forgeron, Création et Catégorie — reliées entre elles via Doctrine ORM, ' +
+    'avec une gestion des utilisateurs distinguant les rôles visiteur et administrateur. ' +
+    'Chaque entité dispose d\'un CRUD complet côté administration (ajout, modification, suppression) ' +
+    'ainsi que d\'une barre de recherche avec filtres sur la vue publique. ' +
+    'Les pages publiques présentent les forgerons et créations sous forme de cards cliquables ' +
+    'menant à des fiches détaillées, avec des relations entre entités navigables directement depuis ces fiches. ' +
+    'La page d\'accueil affiche les 4 dernières créations ajoutées et intègre un mini-jeu (Dragon Nemesis). ' +
+    'Ce projet m\'a permis de mettre en pratique les fondamentaux de Symfony : ' +
+    'entités et relations Doctrine, repositories avec requêtes DQL personnalisées pour la recherche, ' +
+    'formulaires, sécurité et gestion des rôles.',
     technologies: 'Symfony',
     lien: 'https://github.com/btssiojvpromo2025-2026/ppe3-microsoft-support-indian-not-scam.git',
   },
