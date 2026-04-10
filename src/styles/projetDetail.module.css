@@ -1,0 +1,264 @@
+/* ════════════════════════════════════
+   PAGE DÉTAIL PROJET
+   Même univers que la page Projets :
+   vidéo en fond, dark, accent blanc/bleu
+════════════════════════════════════ */
+
+/* ── Conteneur pleine page ── */
+.page {
+  position: relative;
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+/* ── Vidéo fond ── */
+.videoBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Overlay sombre par-dessus la vidéo ── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 1;
+}
+
+/* ── Contenu par-dessus tout ── */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3em 2em 6em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+/* ── Bouton retour ── */
+.retour {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: 'code', sans-serif;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  width: fit-content;
+}
+
+.retour:hover {
+  color: white;
+}
+
+.retour span {
+  font-size: 1.1em;
+  transition: transform 0.2s ease;
+}
+
+.retour:hover span {
+  transform: translateX(-4px);
+}
+
+/* ── En-tête ── */
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 1.5em;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.label {
+  font-family: 'code', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+.titre {
+  font-family: 'orbitron', sans-serif;
+  font-size: 2.6em;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+/* ── Bouton GitHub ── */
+.githubBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.7em 1.4em;
+  background: white;
+  color: #0d0d0d;
+  font-family: 'orbitron', sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 2em;
+  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.githubBtn:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.25);
+}
+
+/* ── Badges technologies ── */
+.technosRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+
+.badge {
+  font-family: 'code', sans-serif;
+  font-size: 0.8em;
+  padding: 0.35em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2em;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(4px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.badge:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Sections génériques ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.sectionTitle {
+  font-family: 'orbitron', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  padding-left: 1em;
+}
+
+.sectionTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 100%;
+  background: white;
+  border-radius: 2px;
+}
+
+/* ── Description ── */
+.description {
+  font-family: 'code', sans-serif;
+  font-size: 1em;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.8em;
+  padding: 1.5em 2em;
+  margin: 0;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Galerie ── */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1em;
+}
+
+.galerieItem {
+  border-radius: 0.8em;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galerieItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.galerieItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.galerieItem:hover img {
+  transform: scale(1.03);
+}
+
+/* Emplacement vide */
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.placeholder span {
+  font-size: 2em;
+  opacity: 0.4;
+}
+
+.placeholder p {
+  font-family: 'code', sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* ── Page not found ── */
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 1.5em;
+  color: white;
+  font-family: 'orbitron', sans-serif;
+}

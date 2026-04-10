@@ -10,6 +10,7 @@ import Veille from './veille.jsx'
 import Certification from './certification.jsx'
 import Formation from './formation.jsx'
 import Competences from './competences.jsx'
+import ProjetDetail from './ProjetDetail';
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Loader from './loader';
 import usePageLoader from './usePageLoader';
@@ -38,6 +39,7 @@ function App() {
             <Route path="/veille" element={<Veille />} />
             <Route path="/formation" element={<Formation />} />
             <Route path="/certification" element={<Certification />} />
+            <Route path="/projet/:id" element={<ProjetDetail />} />
           </Routes>
         </main>
       </div>
