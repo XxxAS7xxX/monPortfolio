@@ -14,6 +14,7 @@ import magic4 from './assets/projets/magic4.png';
 import magic5 from './assets/projets/magic5.png';
 import magic6 from './assets/projets/magic6.png';
 import magic7 from './assets/projets/magic7.png';
+import labjs1 from './assets/projets/labjs1.png';
 
 export const projets = [
   {
@@ -42,17 +43,17 @@ export const projets = [
     description: "Prise en main des outils de développement chrome, afin de créer une extension",
     descriptionLongue: `This theme highlights a dark, minimalist, and immersive atmosphere, perfect for users who want a cleaner and more eye-friendly browser while keeping the unique aesthetic of the game.
 
-Features :
-  - Dark background for better visual comfort
-  - Colors inspired by the Fear and Hunger universe
-  - Active tab text in white and inactive tabs in gray for better readability
-  - Harmonized icons and toolbars for total immersion
+    Features :
+      - Dark background for better visual comfort
+      - Colors inspired by the Fear and Hunger universe
+      - Active tab text in white and inactive tabs in gray for better readability
+      - Harmonized icons and toolbars for total immersion
 
-Perfect for :
-  - Fans of Fear and Hunger
-  - Dark mode enthusiasts
-  - Anyone who wants an aesthetic and immersive browser
-  
+    Perfect for :
+      - Fans of Fear and Hunger
+      - Dark mode enthusiasts
+      - Anyone who wants an aesthetic and immersive browser
+      
   lien de téléchargement : https://chromewebstore.google.com/detail/blmlbmhhlbpleecdigmpbhpenljdfkhl?utm_source=item-share-cb`,
     technologies: 'Json, environnement chrome',
     lien: 'https://github.com/XxxAS7xxX/chromeFH.git',
@@ -69,8 +70,17 @@ Perfect for :
     id: 'projet-labjs',
     titre: 'Projet LabJS',
     description: 'Site brouillon pour tester des fonctionnalités en JavaScript avec plusieurs mini-projets',
+    descriptionLongue: `Projet d'apprentissage regroupant plusieurs mini-applications développées en JavaScript vanilla, HTML et CSS. Chaque module explore un concept fondamental du développement web front-end :
+
+- Chronomètre: Gestion du temps réel avec setInterval, manipulation du DOM et contrôle d'état (start / stop / reset)
+- Pierre-Papier-Ciseaux: Logique de jeu, génération aléatoire, gestion d'événements et affichage dynamique d'images
+- Jeu du saut: Animations CSS, détection de collision via getComputedStyle et interaction clavier/bouton
+- Générateur de code-barres: Validation de formulaire et manipulation dynamique du contenu
+
+Ce projet m'a permis de consolider les bases de JavaScript : manipulation du DOM, événements, conditions, boucles et interaction avec le CSS.`,
     technologies: 'Javascript, html, css',
     lien: 'https://github.com/XxxAS7xxX/siteLabJS.git',
+    images: [ labjs1 ],
   },
   {
     id: 'projet-animaux',
