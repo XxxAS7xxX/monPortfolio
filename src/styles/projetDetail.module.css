@@ -40,15 +40,15 @@
 .fondProjetDetail::before {
   content: '';
   position: absolute;
-  top: -150px;
-  left: -150px;
-  width: 500px;
-  height: 500px;
+  top: -170px;
+  left: -250px;
+  width: 1500px;
+  height: 800px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(232, 93, 4, 0.25) 0%,
-    rgba(26, 58, 107, 0.15) 50%,
+    rgba(182, 255, 86, 0.5) 0%,
+    rgba(26, 26, 26, 0.15) 50%,
     transparent 70%
   );
   pointer-events: none;
@@ -215,6 +215,7 @@
 
 /* ── Description ── */
 .description {
+  white-space: pre-line;
   font-family: 'code', sans-serif;
   font-size: 1em;
   line-height: 1.8;
@@ -260,6 +261,35 @@
   transform: scale(1.03);
 }
 
+.etapes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  padding: 1.5em 2em;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.8em;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  list-style: none;
+  margin: 0;
+  counter-reset: etape-counter;
+}
+
+.etape {
+  font-family: 'code', sans-serif;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  padding: 0.6em 0.8em;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  padding-left: 1em;
+  transition: border-color 0.2s;
+}
+
+.etape:hover {
+  border-left-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
 /* Emplacement vide */
 .placeholder {
   display: flex;
@@ -291,4 +321,56 @@
   gap: 1.5em;
   color: white;
   font-family: 'orbitron', sans-serif;
+}
+.galerieItem {
+  cursor: pointer;
+}
+
+.modale {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.2s ease;
+}
+
+.modaleImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+  border-radius: 0.5em;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.modaleClose {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modaleClose:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
