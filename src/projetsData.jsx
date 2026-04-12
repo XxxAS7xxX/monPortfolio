@@ -15,6 +15,15 @@ import magic5 from './assets/projets/magic5.png';
 import magic6 from './assets/projets/magic6.png';
 import magic7 from './assets/projets/magic7.png';
 import labjs1 from './assets/projets/labjs1.png';
+import musique1 from './assets/projets/musique1.png';
+import musique2 from './assets/projets/musique2.png';
+import musique3 from './assets/projets/musique3.png';
+import musique4 from './assets/projets/musique4.png';
+import musique5 from './assets/projets/musique5.png';
+import qix1 from './assets/projets/qix1.png';
+import qix2 from './assets/projets/qix2.jpg';
+import animaux1 from './assets/projets/animaux1.png';
+import animaux2 from './assets/projets/animaux2.png';
 
 export const projets = [
   {
@@ -63,8 +72,20 @@ export const projets = [
     id: 'gestion-musique',
     titre: 'Gestion de Musique',
     description: "Site de gestion de musique, à partir d'une base de données",
+    descriptionLongue: `Projet de première année réalisé en classe pour apprendre les bases de Symfony et la gestion d'une base de données relationnelle.
+
+Le site impose une authentification obligatoire pour accéder à n'importe quelle page, avec une gestion des rôles distinguant les utilisateurs classiques des administrateurs.
+
+Entités gérées :
+  - Artiste
+  - Album
+  - Style musical
+
+Chaque entité dispose d'un CRUD complet côté administration ainsi que de pages de listing public. 
+Ce projet m'a permis de découvrir les fondamentaux de Symfony : entités et relations Doctrine, formulaires, système de sécurité et gestion des rôles, routage et controllers.`,
     technologies: 'Symfony',
     lien: 'https://github.com/btssiojvpromo2025-2026/gestionmusique-XxxAS7xxX.git',
+    images: [ musique1, musique2, musique3, musique4, musique5 ],
   },
   {
     id: 'projet-labjs',
@@ -88,13 +109,45 @@ Ce projet m'a permis de consolider les bases de JavaScript : manipulation du DOM
     description: "Prise en main de react et MUI à travers un site sur les animaux et leurs caractéristiques",
     technologies: 'React, Mui',
     lien: 'https://github.com/XxxAS7xxX/react-app.git',
+    images: [ animaux1, animaux2 ],
   },
   {
     id: 'jeu-qix',
     titre: 'Jeu QIX',
     description: "Projet d'étude en python, recréation du jeu QIX avec une bibliothèque très limitée",
+    descriptionLongue: `Auteur : [Axel Delpierre et Raphael Daviot]
+
+Date de création : [08/11/2023]
+
+Description du jeu :
+
+QIX est un jeu classique d'arcade où le joueur contrôle un carré qui doit remplir 75%de l'aire de jeu en dessinant des formes et par la même occasion evité l'objet nommer QIX qui ce deplace aléatoirement sur l'aire de jeu.
+
+Instructions :
+
+Utilisez les touches fléchées pour déplacer le carré.
+Dessinez des formes à l'intérieur de l'aire de jeu en appuyant sur la barre d'espace lorsque vous êtes prêt à relier les bords.
+Évitez de toucher le QIX en mouvement et les bordures de l'aire de jeu.
+Votre objectif est de remplir 75% de l'aire de jeu sans vous faire toucher par le QIX
+Fonctionnalités du jeu :
+
+Affichage du pourcentage de surface révélée.
+Affichage du "Game over" quand la partie est perdu.
+Système de vie.
+Système de score basé sur la surface révélée.
+Compteur de vies pour le joueur.
+Déplacement aléatoire du QIX pour créer un défi supplémentaire.
+Déplacement du joueur avec les fèches.
+Déplacement des sparks sur les ligne externes.
+dessin de polygone en fonction des lignes de déplacement du joueur
+Installation :
+
+Assurez-vous d'avoir Python installé sur votre système.
+Installez la bibliothèque FLTK pour Python si ce n'est pas déjà fait.
+Exécutez le fichier jeu_qix.py pour lancer le jeu.`,
     technologies: 'Python',
     lien: 'https://github.com/XxxAS7xxX/QIX.git',
+    images: [ qix1, qix2 ],
   },
   {
     id: 'biblioutheque',
