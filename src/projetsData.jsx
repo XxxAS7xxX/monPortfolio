@@ -1,6 +1,7 @@
 import bibliotheque1 from './assets/projets/biblioutheque1.png';
 import bibliotheque2 from './assets/projets/biblioutheque2.png';
 import bibliotheque3 from './assets/projets/biblioutheque3.png';
+import bibliotheque9 from './assets/projets/biblioutheque9.png';
 import bibliotheque4 from './assets/projets/compo/2ram8go.webp';
 import bibliotheque5 from './assets/projets/compo/cartemere.webp';
 import bibliotheque6 from './assets/projets/compo/hdd.webp';
@@ -175,6 +176,6 @@ Exécutez le fichier jeu_qix.py pour lancer le jeu.`,
       '9. Installation plugins : Home Screen Sections, Media Bar, Collection Sections',
       '10. Automatisation : watchdog WiFi, mise à jour DuckDNS toutes les 5 minutes',
     ],
-    images: [ bibliotheque1, bibliotheque2, bibliotheque3, bibliotheque4, bibliotheque5, bibliotheque6, bibliotheque7, bibliotheque8 ],
+    images: [ bibliotheque9, bibliotheque1, bibliotheque2, bibliotheque3, bibliotheque4, bibliotheque5, bibliotheque6, bibliotheque7, bibliotheque8 ],
   }
 ];
