@@ -2,6 +2,8 @@ import React, { useState, useCallback } from 'react';
 import styles from './styles/sliderBT.module.css';
 import sc_rust from './assets/stage2/screen_rust.png';
 import sc_deploi from './assets/stage2/screen_deploiement.png';
+import stagebt from './assets/stage2/stagebt.png';
+import stagebt1 from './assets/stage2/stagebt1.png';
 
 // ── Remplace les imports par tes vraies images ──
 // import img1 from './assets/stage2/vpn-config.png';
@@ -12,6 +14,7 @@ import sc_deploi from './assets/stage2/screen_deploiement.png';
 function SliderBT() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(null); // 'left' | 'right'
+   const [imageZoom, setImageZoom] = useState(null);
 
   const slides = [
     {
@@ -28,7 +31,7 @@ function SliderBT() {
     {
       id: 2,
       // image: img2,
-      image: null,
+      image: stagebt1,
       placeholder: 'Audit Form',
       title: 'Formulaire d\'audit chaufferie',
       description:
@@ -39,7 +42,7 @@ function SliderBT() {
     {
       id: 3,
       // image: img3,
-      image: null,
+      image: stagebt,
       placeholder: 'PDF Export',
       title: 'Génération de rapport PDF',
       description:
@@ -92,6 +95,7 @@ function SliderBT() {
               src={slide.image}
               alt={slide.title}
               className={styles.image}
+              onClick={() => setImageZoom(slide.image)}
             />
           ) : (
             /* Placeholder à retirer une fois les images disponibles */
@@ -149,6 +153,12 @@ function SliderBT() {
         </div>
 
       </div>
+      {imageZoom && (
+        <div className={styles.modale} onClick={() => setImageZoom(null)}>
+          <img src={imageZoom} alt="Aperçu agrandi" className={styles.modaleImg} />
+          <button className={styles.modaleClose} onClick={() => setImageZoom(null)}>✕</button>
+        </div>
+      )}
     </div>
   );
 }

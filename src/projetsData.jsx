@@ -25,6 +25,13 @@ import qix1 from './assets/projets/qix1.png';
 import qix2 from './assets/projets/qix2.jpg';
 import animaux1 from './assets/projets/animaux1.png';
 import animaux2 from './assets/projets/animaux2.png';
+import exorust1 from './assets/projets/exorust1.png';
+import exorust2 from './assets/projets/exorust2.png';
+import exorust3 from './assets/projets/exorust3.png';
+import exorust4 from './assets/projets/exorust4.png';
+import exorust5 from './assets/projets/exorust5.png';
+import exorust6 from './assets/projets/exorust6.png';
+import exorust7 from './assets/projets/exorust7.png';
 
 export const projets = [
   {
@@ -177,5 +184,14 @@ Exécutez le fichier jeu_qix.py pour lancer le jeu.`,
       '10. Automatisation : watchdog WiFi, mise à jour DuckDNS toutes les 5 minutes',
     ],
     images: [ bibliotheque9, bibliotheque1, bibliotheque2, bibliotheque3, bibliotheque4, bibliotheque5, bibliotheque6, bibliotheque7, bibliotheque8 ],
+  },
+  {
+    id: 'ExoRust',
+    titre: 'Exercice Rust',
+    description: 'Projet d\'exercices en Rust pour découvrir le langage.',
+    descriptionLongue: `Projet de pratique en Rust comprenant plusieurs exercices pour maîtriser les concepts fondamentaux du langage.
+    Les exercices couvrent les bases de la syntaxe, les structures de données, la gestion des erreurs, et les concepts avancés comme les traits et les génériques.`,
+    technologies: 'Rust',
+    images: [ exorust1, exorust2, exorust3, exorust4, exorust5, exorust6, exorust7 ],
   }
 ];
